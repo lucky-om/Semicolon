@@ -47,12 +47,12 @@ const WildcardCard = ({ number, name, isSelected, isSpinning, isRevealed, isLose
           {number}
         </div>
 
-        {/* Wildcard name */}
+        {/* Card label - always shows "Card X" during draw */}
         <div className={cn(
           "mt-4 font-display text-base md:text-lg uppercase tracking-wider text-center transition-all duration-500 px-2",
           isSelected && isRevealed ? "text-primary neon-text" : "text-muted-foreground/80"
         )}>
-          {name}
+          Card {number}
         </div>
 
         {/* Selection indicator */}
